@@ -1,0 +1,147 @@
+body{
+    font-family: 'Lato', sans-serif;
+    color: #101010;
+}
+
+
+header{
+   width: 100%;
+   min-height: 500px;
+   background: #ED4C5C;
+   margin-bottom: 117px;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header-intro{
+    max-width: 445px;
+    float: left;
+    margin-right: 81px;
+}
+.intro-title{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: white;
+    margin: 122px 0px 24px;
+}
+.intro{
+    font-size: 14px;
+    line-height: 140%;
+    color: white;
+    margin-bottom: 42px;
+}
+.header-intro>img{
+    margin-right: 25px;
+    cursor: pointer;
+}
+.header-intro>img:last-child{
+    margin-right: 0px;
+}
+.slider-bg{
+    margin-top: 94px;
+}
+main{
+    width: 100%;
+    min-height: 500px;
+    color: black; 
+    background-color: white;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact{
+    max-width: 434px;  
+    margin-right: 125px;
+}
+.contact-user{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 90px;
+}
+.contact-info{
+    font-size: 14px;
+    line-height: 140%;
+}
+form{
+    max-width: 560px;
+}
+input{
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.first__name{
+    width: 255px;
+    padding: 20px 30px;
+    margin-right: 25px;
+    margin-bottom: 24px;
+}
+.last__name{
+    width: 255px;
+    padding: 20px 30px;
+}
+.phone__number, .select__service{
+    width: 540px;
+    padding: 20px 30px;
+    margin-bottom: 24px;
+}
+.wrap button{
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 17px 34px;
+}
+footer{
+    width: 100%;
+    min-height: 435px;
+    color: black; 
+    background: #FAFAFA;
+    padding-top: 85px;  
+}
+ footer h3{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 33px;
+ }
+.footer__address-info{
+    font-size: 14px;
+    line-height: 150%;
+ }
+ .footer__list>li{
+    font-size: 14px;
+    line-height: 160%;
+ }
+ .footer__getIn-info{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+ }
+ .footer__getIn>img{
+     margin-right: 14px;
+     cursor: pointer;
+ }
+ .footer__getIn>img:last-child{
+     margin-right: 0px;
+ }
+
+
+
+
+
+
+
+
