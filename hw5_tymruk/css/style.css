@@ -409,9 +409,14 @@ header{
     cursor: pointer;
     transition: .1s linear;
 }
+.footer__helper a{
+    text-decoration: none;
+    color: #212353;
+}
 .footer__helper li:hover{
     font-size: 17px;
 }
+
 .footer__end{
     display: flex;
     flex-wrap: wrap;
