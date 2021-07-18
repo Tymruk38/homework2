@@ -219,6 +219,8 @@ header{
     background: url(../img/svg/vector_sm.svg) no-repeat center right;
     cursor: pointer;
     margin-bottom: 132px;
+    color: #212353;
+    font-weight: 700;
 }
 .testimonials{
     padding-bottom: 150px;
