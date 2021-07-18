@@ -38,6 +38,7 @@
   }
 
   body{
+    font-family: 'Roboto';
     background: #E5E5E5;
   }
   .wrapper-style{
@@ -113,6 +114,7 @@
    padding: 8px 10px;
    background: #4AD295;
    border: 0;
+   border-radius: 2px;
    cursor: pointer;
 }
 
@@ -158,7 +160,7 @@ margin: 16px 20px 16px 8px;
 }
 .decline-btn{
   padding: 4px 10px;
-  font-family: Inter;
+  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: #0D0C22;
@@ -199,6 +201,10 @@ margin: 16px 20px 16px 8px;
    line-height: 20px;
    color: #FFFFFF;
 }
+.model-five a{
+  text-decoration: none;
+  color: rgb(255, 187, 0);
+}
 .okay-btn{
   background: #FFFFFF;
   border-radius: 8px;
@@ -234,9 +240,7 @@ p.one{
   font-weight: normal;
   margin-bottom: 16px;
 }
-p.two{
-  display: inline;
-  max-width: 160px;
+a.two{
   font-size: 14px;
   line-height: 16px;
   margin-right: 67px;
