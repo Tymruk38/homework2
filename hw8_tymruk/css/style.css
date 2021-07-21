@@ -1,0 +1,90 @@
+body{
+    background-color: #3d3636;
+    color: white;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1440px;
+    height: 1vh;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    letter-spacing: 0.1em;
+}
+.table{
+    border: 1px solid #d6cdcd;
+    border-radius: 10px;
+    border-spacing: 0;
+    margin: 50px;
+}
+th{
+    text-align: left;
+}
+.table__bold, .table__normal{
+    width: 430px;
+    padding: 20px 0 20px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #d6cdcd;
+}
+.triangle{
+    width: 10px;
+}
+.td_color_wh {
+    width: 430px;
+    padding: 20px 0 20px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #d6cdcd;
+    color: white;
+}
+.td_color_gr{
+    width: 430px;
+    padding: 20px 0 20px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #d6cdcd;
+    color: gray;
+}
+.td_color-wh-last{
+    width: 530px;
+    padding: 20px 0 20px 20px;
+    font-size: 16px;
+    color: white;
+}
+.td_color-gr-last{
+    width: 530px;
+    padding: 20px 0 20px 20px;
+    font-size: 16px;
+    color: gray;
+}
+.cirkle{
+    background: url(../img/cirkl_gr.png) no-repeat 95% center ;
+    background-size: 30px;
+}
+.cirkle_wh{
+    background: url(../img/cirkle_wh.svg) no-repeat 95% center ;
+    background-size: 30px;
+}
+ .pic{
+    width: 20px;
+    margin-right: 10px;
+ }
+ .search__form {
+    position: relative;
+    top: -30px;
+}
+
+.search {
+    box-sizing: border-box;
+    position: absolute;
+    left: 250px;
+    width: 265px;
+    height: auto;
+    padding: 15px 50px;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    color: white;
+    background: url(../img/search\ \(1\).svg) no-repeat 3% center;
+    background-color: rgb(82, 76, 76);
+    background-size: 40px;
+}
