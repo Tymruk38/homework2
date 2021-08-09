@@ -1,0 +1,145 @@
+
+li{
+    list-style: none;
+}
+/* header start */
+.flex{
+    padding: 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_link{
+    margin-right: 20px;
+}
+.header_search{
+    width: 216px;
+    text-align: center;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: url(../img/search.svg) no-repeat 30% center;
+    transition: .1s;
+}
+.header_search:hover{
+    border: 3px solid #DBDBDB;
+}
+.header{
+    border-bottom: 1px solid  #DBDBDB;
+    margin-bottom: 30px;
+}
+/* header end */
+
+/* intro start */
+.intro{
+    margin-bottom: 56px;
+}
+.intro>.container{
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.intro_info{
+    max-width: 530px;
+}
+.info_name{
+    margin-bottom: 24px;
+}
+.intro_img{
+    margin-right: 90px;
+    margin-bottom: 20px;
+}
+.name_title{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    margin-right: 26px;
+}
+.btn_info{
+    padding: 5px 26px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 8px;
+}
+.info_statics{
+    margin-bottom: 24px;
+}
+
+.statics_list{
+    padding: 0px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+}
+.statics_list span{
+    font-weight: 700;
+}
+
+.statics_list li{
+    margin-right: 40px;
+}
+
+.text_title{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;  
+}
+.info_text p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+.text_link{
+    text-decoration: none;
+}
+.foto_md>.container{
+    border-bottom: 1px solid #DBDBDB;
+}
+.foto_md figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 55px;
+
+}
+.foto_md img{
+    margin-bottom: 12px;
+}
+
+.portfolio_card{
+    margin-right: 64px;
+    padding: 19px 5px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8F8F8F;
+    letter-spacing: 0.09em;
+    transition: .1s;
+}
+.portfolio_card>svg{
+    margin-right: 5px;
+}
+.portfolio_card:hover{
+    border-top: 1px solid #000;
+    color: #262626;
+}
+.portfolio_pic .row{
+   display: flex;
+   justify-content: center;
+}
+.portfolio_pic .row img{
+    width: 100%;
+    margin-bottom: 25px;
+    object-fit: cover;
+}
+/* @media screen and (max-width: 540px) {
+    .row {
+        justify-content: center;
+    }
+} */
+/* intro end */
