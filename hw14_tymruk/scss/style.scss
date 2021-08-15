@@ -1,0 +1,307 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+@mixin styleText($fw, $fs, $lh, $col) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $col;
+}
+
+$color1:#505F98;
+$color2: #6F7CB2;
+$color3: #FFFFFF;
+$colorH: #091133;
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: $color1;
+}
+//header start
+.container{
+    max-width: 1140px;
+}
+header{
+    background: url(../img/bg_header.png)no-repeat right top;
+    .container{
+    position: relative;
+}
+.nav_head{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 14px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_head-list{
+    margin-bottom: 0;
+}
+.nav_head-list li{
+    margin-right: 60px;
+}
+.nav_head-list li:last-child{
+    margin-right: 0px;
+}
+.btn{
+    @include styleText(500, 12px, 18px, $color3);
+    padding: 4px 40px;
+    background: #111B47;
+    border-radius: 2px;
+}
+.btn:hover{
+     color: gray;
+}
+.head_inner{
+    max-width: 539px;
+    padding: 303px 0px 383px 0px;
+}
+.head_title{
+    @include styleText(500, 50px, 66px, $colorH);
+    margin-bottom: 20px;
+}
+.head_text{
+    @include styleText(400, 18px, 30px, $color1);
+    margin-bottom: 70px; 
+}
+.btn_lorem{
+    width: 189px;
+    @include styleText(500, 16px, 36px, $colorH);
+    background: transparent;
+    border: 1px solid #091133;
+    border-radius: 2px;
+    padding: 4px 0px;
+  }
+  .head_inner .btn{
+    width: 189px;
+    @include styleText(500, 16px, 36px,#FFFFFF);
+    margin-right: 30px;
+    padding: 4px 0px;
+  }
+}
+  //header end
+
+  //section intro start
+.intro{
+    
+    padding: 108px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro_info{
+    max-width: 540px;
+    flex-direction: column;
+}
+.intro_info-title{
+    @include styleText(500, 36px, 48px, $colorH);
+    margin-bottom: 8px; 
+}
+.intro_info-text{
+    @include styleText(400, 16px, 26px, $color2);
+    margin-bottom: 70px; 
+}
+.intro_info-cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.intro_info-card{
+    max-width: 255px;
+}
+.intro_info-card>img{
+    margin-bottom: 14px;
+}
+.intro_info-card_title{
+    @include styleText(500, 16px, 26px, $colorH); 
+}
+.intro_info-card_text{
+    @include styleText(400, 12px, 18px, #5D6970);
+}
+  //section intro end
+  //section cards start
+.card_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0px 130px 0px;
+    .card_item-info{
+        max-width: 445px;
+    }
+    .card_info-title{
+        @include styleText(500, 36px, 48px, $colorH);
+        margin-bottom: 8px;
+    }
+    .card_info-text{
+        @include styleText(400, 16px, 26px, $color2);
+    }
+}
+// @media (max-width :1000px){
+//     .card_item{
+//         justify-content: center;
+//     }
+// }
+.flamingo{
+    padding: 92px 0px;
+}
+.flowers{
+    padding: 116px 0px; 
+}
+.card_info-text{
+    margin-bottom: 24px;
+}  
+.card_item-info .btn{
+    @include styleText(500, 14px, 24px, $color3);
+    width: 150px;
+    padding: 4px 0px;
+    background: #111B47;
+    border-radius: 2px;
+    &:hover{
+        color: gray;
+   }
+}
+ //section cards end
+ //section price start
+.price{
+    width: 100%;
+    background: url(../img/price_bg.png)  right top;
+    background-size: 100%;
+    padding: 230px 0px 172px  ;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .price_info{
+        text-align: center;
+        max-width: 600px;
+        .price_title{
+            @include styleText(500, 36px, 48px, $colorH);
+           margin-bottom: 8px;
+        }
+        .price_text{
+            @include styleText(400, 16px, 26px, $color2);
+            margin-bottom: 20px; 
+        }
+        .price_text-kit{
+            @include styleText(400, 16px, 26px, #37447E);
+            margin-bottom: 50px;
+        }
+        .price_text-simple{
+            @include styleText(400, 14px, 24px, #5D6970);
+            
+        }
+        .btn{
+            @include styleText(500, 14px, 24px, $color3);
+            width: 189px;
+            padding: 4px 0px;
+            background: #111B47;
+            border-radius: 2px;
+            &:hover{
+                color: gray;
+           }
+        }
+
+    }
+}
+ //section price end
+ //footer footer_copy start
+ footer{
+    background: #E7ECFF;
+ }
+ .footer_copy{
+    
+     padding: 60px 0px 40px;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid #CDD1D4;
+     .footer_copy-text{
+        @include styleText(500, 14px, 24px, #939EA4); 
+     }
+     .btn{
+        @include styleText(500, 12px, 18px, $color3);
+        width: 109px;
+        padding: 4px 0px;
+        background: #111B47;
+        border-radius: 2px;
+        &:hover{
+            color: gray;
+       }
+    }
+ }
+
+  //footer footer_copy end
+  //footer nav_footer start
+
+  .nav_footer-list, .nav_social-list{
+    padding: 20px 0px 32px 0px;
+}
+.nav_footer-list{
+    li{
+        margin-right: 60px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+.nav_social-list{
+    li{
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+  //footer nav_footer end
+
+  @media (max-width :1150px){
+    header{
+        background: none;
+        .head_inner{
+           width: 100%;
+           margin: 0 auto;
+           padding: 203px 0px 100px;
+           text-align: center;
+        }
+     }
+     .intro{
+        justify-content: center;
+        text-align: center;
+    }
+    .price{
+        padding: 50px 0px;
+    }
+   }
+   @media (max-width :595px){
+       .intro{
+        justify-content: center;
+        text-align: center;
+        .intro_info{
+            justify-content: center;
+            text-align: center;
+        }
+        .intro_info-cards{
+            justify-content: center;
+            align-items: center;
+        }
+       }
+       .card_item{
+           padding: 50px 0px;
+           text-align: center;
+           margin: 0 auto;
+       .card_item-pic{
+           padding-bottom: 30px;
+       }
+    }
+    .nav_head{
+        justify-content: center;
+    }
+   }
