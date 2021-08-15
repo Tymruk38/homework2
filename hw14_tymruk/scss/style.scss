@@ -30,25 +30,27 @@ header{
     .container{
     position: relative;
 }
-.nav_head{
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 14px 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+
+
+.navbar-collapse{
+    flex-grow: 0;
 }
-.nav_head-list{
-    margin-bottom: 0;
+.navbar-toggler{
+    border:1px solid black;
 }
-.nav_head-list li{
+.navbar-toggler-icon{
+    background:#111B47;
+}
+.nav-item{
     margin-right: 60px;
+    a{
+        color: $color1;
+    }
 }
-.nav_head-list li:last-child{
+.nav-item:last-child{
     margin-right: 0px;
 }
+
 .btn{
     @include styleText(500, 12px, 18px, $color3);
     padding: 4px 40px;
@@ -58,6 +60,7 @@ header{
 .btn:hover{
      color: gray;
 }
+
 .head_inner{
     max-width: 539px;
     padding: 303px 0px 383px 0px;
@@ -280,6 +283,11 @@ header{
         padding: 50px 0px;
     }
    }
+   @media (max-width :939px){
+       .card_item{
+           justify-content: center;
+       }
+   }
    @media (max-width :595px){
        .intro{
         justify-content: center;
@@ -303,5 +311,17 @@ header{
     }
     .nav_head{
         justify-content: center;
+    }
+    footer{
+        .container{
+            width: 100%;
+        }
+        .footer_copy{
+            justify-content: center;
+        }
+        .nav_footer{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
    }
