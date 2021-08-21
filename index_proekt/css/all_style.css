@@ -1,0 +1,255 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #93706C;
+    max-width: 1440px;
+    background: #FCF6F2;
+    margin: 0 auto;
+}
+h1, h2, h3, h4{
+    font-family: 'Playfair Display', serif;
+}
+p, a, button{
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #FCF6F2;
+}
+.btn{
+    color: #FCF6F2;
+    background: #E18A7A;
+    border-radius: 2px;
+    border: 0px;
+}
+.btn:hover{
+    background: #EE8363;
+}
+.btn:focus{
+    background: #F4A892;
+}
+footer a{
+    color: #FCF6F2;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1050px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+
+.active{
+    color:#E18A7A ;
+}
+/* header start */
+.header_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    margin: 24px 0px;
+    /* padding: 16px 0px; */
+    border-top: 2px solid rgba(147, 112, 108, 0.1);
+    border-bottom: 2px solid rgba(147, 112, 108, 0.1);
+ }
+ 
+ h1{
+     width: max-content;
+     background: #FCF6F2;
+     padding: 18px 36px;
+     font-family: 'Playfair Display SC', serif;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 32px;
+     letter-spacing: 0.32em;
+ }
+ .nav_select{
+     display: block;
+     height: 16px;
+     background: none;
+     border: 0px;
+     padding-right: 10px;
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 800;
+     font-size: 14px;
+     line-height: 16px;
+     appearance: none;
+     color: #93706C;
+     padding-right: 15px;
+     background: url(../img/svg/select.svg) no-repeat right center;
+ }
+ 
+ 
+ 
+ .nav_wrap{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     padding: 32px 0px;
+     margin-bottom: 24px;
+ }
+ .nav_list{
+  display: flex;
+  align-items: center;
+ }
+ .nav_link{
+     margin-right: 44px;
+     color: #93706C;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 16px;
+ }
+ .nav_link:last-child{
+     margin-right: 75px;
+ }
+ .nav_link:hover{
+     color:  #EE8363;
+ }
+ .nav_link:focus{
+     color: #F4A892;
+ }
+ .btn_nav{
+     padding: 16px 40px;
+ }
+ .btn_nav-link{
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 16px;
+ }
+ /* .section_header{
+     min-height: 592px;
+     background: url(../img/header_section.png) no-repeat;
+     background-size: cover;
+     margin-bottom: 208px;
+ } */
+ .active{
+    color:#E18A7A ;
+}
+ /* header end */
+ /* footer start */
+.footer{
+    min-height: 300px;
+    background-color:#93706C;;
+}
+.footer_wrap{
+    padding: 57px 70px 64px 80px;
+    color: #FCF6F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.footer_wrap-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.footer_title{
+    max-width: 157px;
+    font-family: "Playfair Display SC";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.32em;
+    margin-right: 116px;
+}
+.footer_list{
+    margin-right: 44px;
+}
+.footer_list:last-child{
+    margin-right: 0px;
+}
+.footer_link_bold{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+}
+.footer_link{
+    font-family: Raleway;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+padding-bottom: 24px;
+}
+.footer_list li{
+    padding-bottom: 24px;
+    transition: all 0.1s;
+}
+.footer_list li:last-child{
+    padding-bottom: 0px;
+}
+.footer_link>img{
+    padding-right: 25px;
+}
+.footer_link>img:last-child{
+    padding-right: 0px;
+}
+.footer_list li:hover{
+    transform: scaleX(0.9);
+}
+img{
+    object-fit: cover;
+}
+/* footer end  */
+#burger, [for=burger]{
+    display: none;
+}
+@media (max-width: 1140px) {
+    .nav_link{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .select{
+        padding-bottom: 20px;
+    }
+    .section_header{
+        display: none;
+    }
+}
+
+
+
+@media  (max-width: 800px) {
+    [for=burger] {
+        display: block;
+        font-size: 50px;    
+    }
+    [for=burger]::before{
+        content: "≡";
+    }
+    .select{
+        display: none;
+    }
+    nav{
+        display: none;  
+    }
+    .nav_list li{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .nav_link{
+        font-size: 20px;
+    }
+    .nav_wrap{
+        flex-direction: column-reverse;
+        align-items:flex-start;
+    }
+    .nav_list{
+        flex-direction:column;
+        align-items: flex-start;
+
+    }
+    #burger:checked + label + nav {
+        display: block;
+    }
+    #burger:checked +  [for=burger]::before{
+         content: "✗";
+    }
+}
