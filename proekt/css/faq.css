@@ -1,0 +1,95 @@
+
+/* main start */
+.acordeon{
+    margin-bottom: 300px;
+}
+
+.acordeon_box-flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.acordeon_wrap{
+    padding-left: 200px;
+}
+.acordeon_title{
+    max-width: 515px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 75px;
+    margin-bottom: 30px;
+}
+.accordion{
+    max-width: 675px;
+    color: #93706C;
+    border: none;
+    background: #FCF6F2;
+}
+button:focus, button:hover{
+    background: none;
+}
+.accordion-button{
+    color: #93706C;
+    border: none;
+    background: #FCF6F2;
+}
+.accordion-button:focus{
+    border-color: transparent;
+}
+.accordion-item{
+    color: #93706C;
+    background: #FCF6F2;
+    border: none;
+    border-bottom: 1px solid #C7C7C7;;
+    margin-bottom: 20px;
+}
+.accordion-button::after{
+    background-image: url(../img/faq_img/svg/acordeon_.svg);
+}
+.accordion-button:not(.collapsed){
+    color: #93706C;
+    background: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/faq_img/svg/acordeon_.svg);
+    transform: rotate(-180deg);
+}
+
+
+/* main end */
+button :hover{
+    background: #EE8363;
+    color: #FCF6F2;
+}
+button :focus{
+    background: #F4A892;
+    color: #FCF6F2;
+}
+footer a:hover{
+    transform: scaleX(1.1);
+    color: #FCF6F2;
+
+}
+.footer_title{
+    margin-right: 111px;
+}
+
+@media (max-width: 1430px){
+    .acordeon{
+        margin-bottom: 40px;
+    }
+    .acordeon_wrap{
+        padding-left: 0;
+    }
+    .acordeon_box-flex{
+        justify-content: center;
+    }
+}
+@media (max-width: 765px){
+    .acordeon_title{
+        text-align: center;
+        font-size: 36px;
+        line-height: 30px;
+    }
+}

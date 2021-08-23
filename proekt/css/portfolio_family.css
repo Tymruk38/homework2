@@ -1,0 +1,111 @@
+
+.active{
+    color:#E18A7A ;
+}
+.portfolio_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 174px;
+    justify-content: space-between;
+    margin-bottom: 83px;
+}    
+.portfolio_list-item{
+    padding-right: 95px;
+    margin-right: 86px ;
+    background: url(../img/portfolio_all_img/svg/cirkle.svg) no-repeat right center;
+    color: #93706C;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.portfolio_list-item_last{
+    color: #93706C;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.portfolio_list-item:hover{
+    color:  #EE8363;
+}
+.portfolio_list-item:focus{
+    color: #F4A892;
+}
+.portfolio_list-item_last:hover{
+    color:  #EE8363;
+}
+.portfolio_list-item_last:focus{
+    color: #F4A892;
+}
+.active{
+    color:#E18A7A ;
+}
+/* header end */
+/* main start */
+
+.portfolio_container-grid{
+    padding: 0px 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+    padding-bottom: 300px;
+}
+.portfolio_grid-item_lg{
+    grid-column: span 2;
+}
+
+/* main end */
+
+@media  (max-width: 1374px){
+    .portfolio_list{
+        justify-content: center;
+        padding: 20px 0px;
+    } 
+    .portfolio_list-item{
+        padding-right: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media  (max-width: 800px){
+    .portfolio_container-grid{
+        padding: 0px 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-auto-flow: dense;
+        justify-items: center; 
+        margin-bottom: 20px;   
+    }
+    .portfolio_list-item, .portfolio_list-item_last{
+        font-size: 18px;
+    }
+    .portfolio_list-item{
+        padding-right: 20px;
+    }   
+}
+@media  (max-width: 583px){
+    .portfolio_list{
+        margin-bottom: 0px;
+    }
+    .portfolio_list-item{
+        margin-right: 20px; 
+    }
+}
+@media  (max-width: 489px){
+    .portfolio_list{
+        flex-direction: column;
+        padding: 20px 50px;
+    }
+    .portfolio_list-item{
+        background: none;
+    }
+}
+
+
+
+
+
+
+
+

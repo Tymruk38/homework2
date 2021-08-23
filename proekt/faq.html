@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all_style.css">
+    <link rel="stylesheet" href="./css/faq.css">
+    <title>Арина Касаткина</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header_title">
+          <h1>Арина Касаткина</h1>
+     </div>
+      <div class="wrapper">
+        <input type="checkbox" id="burger">
+        <label for="burger"></label>
+             <nav>
+               <div class="nav_wrap">
+                   <div class="select">
+                       <select name="leng" id="leng" class="nav_select" >
+                           <option value="ru">RU</option>
+                           <option value="ua">UA</option>
+                           <option value="en">EN</option>
+                       </select>
+                   </div>
+                   <ul class="nav_list">
+                       <li><a href="./index.html" class="nav_link">Главная</a></li>
+                       <li><a href="./about.html" class="nav_link">Обо мне</a></li>
+                       <li><a href="/portfolio_all.html" class="nav_link">Портфолио</a></li>
+                       <li><a href="./price.html" class="nav_link">Услуги</a></li>
+                       <li><a href="./contakts.html" class="nav_link">Контакты</a></li>
+                       <li><a href="./faq.html" class="nav_link active">FAQ</a></li>
+                       </li><a href="./contakts.html" class="btn_nav-link btn_nav btn">Написать</a></li>
+                   </ul>
+               </div>
+             </nav>
+    
+          </div>
+      </header>
+    <main>
+     <section  class="acordeon">
+         <div class="acordeon_box-flex">
+              <div class="acordeon_wrap">
+                  <h3 class="acordeon_title">
+                      Часто задаваемые вопросы
+                  </h3>
+                  <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              За какое время нужно записываться на съемку?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Чем раньше вы записываетесь, тем вероятнее, что нужное вам время будет свободно. Иногда люди записываются даже на сегодняшний день, но оптимальный срок - за две недели.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Как понять, сколько часов фотосессии нужно заказать?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Если говорить о студийных, семейных или лавстори фотосессиях - то обычно достаточно стандартной фотосессии, продолжительностью один час. Больше нужно брать в том случае, если вас пять или более человек. Что других видов съемки, то тут все индивидуально, я всегда могу проконсультировать вас по телефону.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Можно ли получить исходники фотографий?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Да, за отдельную плату, по договоренности.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Мои фотографии будут опубликованы в интернете?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Возможно, если вы заранее не оговорите обратного. Все фотографии, кроме фото с детьми, а также ню-фотографий могут быть опубликованы в моем портфолио на сайте или в социальных сетях. Если вы не хотите этого - пожалуйста, предупредите меня заранее.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+                  <div class="acordeon_img">
+                      <img src="./img/faq_img/foto.png" alt="foto_acordeon">
+                  </div>
+         </div>
+     </section>
+    </main>
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer_wrap">
+            <h3 class="footer_title">
+                Арина Касаткина
+            </h3>
+            <div class="footer_wrap-list">
+                <ul class="footer_list">
+                    <li><a href="./index.html" class="footer_link_bold">Главная</a></li>
+                    <li><a href="./about.html" class="footer_link">Обо мне</a></li>
+                    <li><a href="./faq.html" class="footer_link">FAQ</a></li>
+                </ul>
+                <ul class="footer_list">
+                    <li><a href="./portfolio_all.html" class="footer_link_bold">Портфолио</a></li>
+                    <li><a href="./portfolio_family.html" class="footer_link">Семейние</a></li>
+                    <li><a href="./portfolio_ind.html" class="footer_link">Индивидуальние</a></li>
+                    <li><a href="./portfolio_backstag.html" class="footer_link">Бекстейдж</a></li>
+                </ul>
+                <ul class="footer_list">
+                    <li><a href="./price.html" class="footer_link_bold">Услуги</a></li>
+                    <li><a href="./portfolio_family.html" class="footer_link">Семейние</a></li>
+                    <li><a href="./portfolio_ind.html" class="footer_link">Индивидуальние</a></li>
+                    <li><a href="./price.html" class="footer_link">Дополнительные услуги</a></li>
+                    <li><a href="#!" class="footer_link">Важно</a></li>
+                </ul>
+                <ul class="footer_list">
+                    <li><a href="contakts.html" class="footer_link_bold">Контакти</a></li>
+                    <li><a href="#!" class="footer_link">0632589730</a></li>
+                    <li><a href="#!" class="footer_link">anriplh@gmail.com</a></li>
+                    <li><a href="#!" class="footer_link">
+                        <img src="./img/svg/facebook.svg" alt="facebook">
+                        <img src="./img/svg/twitter.svg" alt="twitter">
+                        <img src="./img/svg/instagram.svg" alt="instagram">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    </footer>
+  </div>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

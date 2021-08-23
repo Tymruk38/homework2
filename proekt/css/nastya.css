@@ -1,0 +1,65 @@
+/* heder start */
+.header{
+    margin-bottom: 93px;  
+}
+.nastya_link>span{
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 75px;
+    color: #93706C;
+    margin-bottom: 93px;
+    padding-left: 76px;
+    background: url(../img/nastya_img/svg/arrov.svg) no-repeat left center;
+}
+/* main start */
+img{
+    object-fit: cover;
+}
+.portfolio_container-grid{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, auto);
+    grid-auto-flow: dense;
+    grid-gap: 32px;
+    padding-bottom: 300px;
+    justify-items: center;
+}
+
+ .md{
+    grid-row:span 2;
+}
+.lg{
+    grid-column: span 2;
+    grid-row: span 2;
+} 
+/* main end */
+
+@media  (max-width: 800px){
+    .header{
+        margin-bottom: 10px;
+    }
+    .nastya_link>span{
+        font-size: 28px;
+    }
+    .portfolio_container-grid{
+        padding: 0px 10px;
+        grid-template-columns: auto-fill;
+        grid-gap: 10px;
+        grid-auto-flow: dense;
+        justify-items: center; 
+        margin-bottom: 20px;   
+    }     
+}
+@media  (max-width: 400px){
+    .nastya_link>span{
+        font-size: 22px;
+        padding-left: 45px;
+    }
+}
+
+
+
+
+
+

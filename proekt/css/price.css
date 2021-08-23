@@ -1,0 +1,201 @@
+
+
+/* main start */
+.price_title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 75px;
+    margin-bottom: 92px;
+}
+.price_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 143px;
+}
+.price_card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #93706C;
+    border-radius: 5px;
+    padding: 48px 80px 80px 80px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+}
+.price_card-title{
+    font-size: 32px;
+    line-height: 43px;
+    margin-bottom: 48px;
+}
+.price_card-price{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 48px;
+}
+.price_card-text{
+    margin-bottom: 80px;
+}
+.price_btn{
+    padding: 16px 42px;
+}
+
+
+.services{
+    margin-bottom: 160px;
+}
+
+.service_box-flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services_title{
+    display: inline-block;
+    padding: 11px 11px 11px 208px;
+    font-size: 32px;
+    line-height: 43px;
+    border-top: 2px solid rgb(58%, 44%, 42%, .1);
+    border-bottom: 2px solid rgb(58%, 44%, 42%, .1);
+    margin-bottom: 62px;
+}
+
+.servise_list{
+    padding-left: 208px;
+    padding-right: 10px;
+    width: 615px;
+}
+.service_list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 46px;
+}
+.service_list-item:last-child{
+    margin-bottom: 0px;
+}
+.service_list-item span{
+    font-family: Playfair Display;
+    font-size: 32px;
+    line-height: 43px;
+    color: #E18A7A;
+}
+.service_img img{
+    height: 100%;
+}
+
+.important{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 311px;
+}
+.important_img{
+    margin-right: 36px;
+}
+.important_title{
+    display: inline-block;
+    font-size: 32px;
+    line-height: 43px;
+    padding: 11px 44px 11px 0px;
+    margin-bottom: 45px;
+    border-top: 2px solid rgb(58%, 44%, 42%, .1);
+    border-bottom: 2px solid rgb(58%, 44%, 42%, .1);
+}
+.important_list-item{
+    padding-left: 35px;
+    background: url(../img/price_img/svg/cirkl_li.svg) no-repeat left center;
+    margin-bottom: 27px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+}
+.important_list{
+    max-width: 660px;
+}
+.important_list-item:last-child{
+    margin-bottom: 0px;
+}
+/* .wrapper{
+    box-sizing: border-box;
+} */
+.price_cards{
+    box-sizing: border-box;
+}
+/* main end */
+@media  (max-width: 1360px){
+    .service_box-flex{
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    .services_title, .important_title{
+        display: block;
+        padding-left: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .servise_list, .important_list{
+        padding-left: 10px;
+        width: inherit;
+        margin-bottom: 20px;
+    }
+    .service_list-item{
+        margin-bottom: 20px;
+    }
+    .important{
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media  (max-width: 1025px){
+    .services{
+        margin-bottom: 40px;
+    }
+    .price_cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .price_card{
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+    .price_title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+@media  (max-width: 620px){
+    .price_card{
+        padding: 20px;
+    }
+    .service_list-item{
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 16px;
+        text-align: center;
+    }
+    .important_list-item{
+        text-align: center;
+    }
+    .important_list-item{
+        padding-left: 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .important_img{
+        margin-right: 0;
+    }
+}
