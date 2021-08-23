@@ -74,6 +74,7 @@ img{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
     .main_about-title{
         margin-bottom: 30px;
@@ -83,28 +84,10 @@ img{
     .main-btn{
         padding-bottom: 100px;
     }
+    .main_img-about{
+        margin-right: 0px;
+    }
 }
 
-/* .foto_grid-container{
-    padding: 0px 32px;
-    display: grid;
-    grid-template-columns:repeat(3, minmax(320px, 672px));
-    grid-gap: 32px;
-    padding-bottom: 89px;
-}
-.foto_grid-item-lg{
-    grid-column: span 2;
-}
-.main-btn{
-    text-align: center;
-    padding-bottom: 308px;
-}
-.btn_main-foto{
-    padding: 16px 11px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-} */
-/* main end */
 
 
